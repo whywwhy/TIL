@@ -12,12 +12,12 @@ SVM은 Support Vector Machine의 약자로 서포트 벡터 머신이다.
 
 따라서 결국 이 `결정 경계라는 걸 어떻게 정의하고 계산하는지 이해하는게` 더 중요하다는 뜻이다.
 
-![alt text](image.png)
+![alt text](./img/image.png)
 우선 데이터에 2개 속성(feature)만 있다면 결정 경계는 이렇게 간단한 선 형태가 나오게 된다. 
 
 하지만 속성이 3개로 늘어난다면 이렇게 3차원으로 그려야만 한다.
 
-![alt text](image-1.png)
+![alt text](./img/image-1.png)
 
 그리고 이 때의 결정 경계는 **선이 아닌 평면**이 된다.
 
@@ -28,7 +28,7 @@ SVM은 Support Vector Machine의 약자로 서포트 벡터 머신이다.
 ### 2️⃣ 최적의 결정 경계(Decision Boundary)
 <hr/>
 
-![alt text](image-3.png)
+![alt text](./img/image-3.png)
 
 **결정 경계는 데이터 군으로부터 최대한 멀리 떨어지는 게 좋다**는 걸 알 수 있다.
 실제로 서포트 벡터 머신(Support Vector Machine)이라는 이름에서 **Support Vectors는 결정 경계**와 가까이 있는 데이터 포인트들을 의미한다.
@@ -39,7 +39,7 @@ SVM은 Support Vector Machine의 약자로 서포트 벡터 머신이다.
 <hr/>
 
 **마진(Margin)은 결정 경계와 서포트 벡터 사이의 거리**를 의미한다.
-![alt text](image-4.png)
+![alt text](./img/image-4.png)
 
 가운데 실선이 하나 그어져있는데, 이게 바로 '결정 경계'가 이다. 이 점선으로부터 결정 경계까지의 거리가 바로 '마진(Margin)'이다.
 
@@ -52,7 +52,7 @@ SVM은 Support Vector Machine의 약자로 서포트 벡터 머신이다.
 ### 4️⃣ 이상치(Outlier)를 얼마나 허용할 것인가
 <hr/>
 
-![alt text](image-5.png)
+![alt text](./img/image-5.png)
 
 - 위의 그림은 아웃라이어를 허용하지 않고 기준을 까다롭게 세운 모양이다. 이걸 **하드 마진(hard margin)** 이라고 부른다. 즉, 마진이 매우 작아진다. 이렇게 개별적인 학습 데이터들을 다 놓치지 않으려고 아웃라이어를 허용하지 않는 기준으로 결정 경계를 정해버리면 오버피팅(overfitting) 문제가 발생할 수 있다.
 
@@ -61,7 +61,7 @@ SVM은 Support Vector Machine의 약자로 서포트 벡터 머신이다.
 ### 5️⃣ 커널(Kernel)
 <hr/>
 
-![alt text](image-6.png)
+![alt text](./img/image-6.png)
 
 빨간색 점을 파란색 점과 분리하는 직선을 그릴 수가 없다!! 오 노.. ㅠㅜ
 
